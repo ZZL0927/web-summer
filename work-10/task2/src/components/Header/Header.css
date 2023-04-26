@@ -1,0 +1,45 @@
+header {
+  height: 200rem;
+  color: white;
+  background-color: rgb(229, 42, 40);
+  padding: 0 30rem;
+}
+header .top {
+  text-align: center;
+  height: 100rem;
+  line-height: 100rem;
+  font-size: 40rem;
+}
+header .title {
+  height: 70rem;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  border-radius: 30rem;
+  overflow: hidden;
+}
+header .title .tab {
+    color: white;
+    text-decoration: none;
+  height: 70rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+header .title .tab>div{
+    height: 70rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(206,36,35);
+}
+header .title img{
+    width: 40rem;
+    margin-right: 20rem;
+}
+header .title .active > div {
+  background-color: rgb(186, 31, 32);
+}

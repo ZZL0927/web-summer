@@ -1,0 +1,99 @@
+.input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 24px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 16px 0 rgb(192 198 207 / 50%);
+    
+}
+.title{
+    display: flex;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        // border-bottom: 1px solid rgba(25,55,88,.1);
+        border-bottom: 1px solid #1488ed;
+    }
+    input{
+        font-weight: bold;
+        flex: 1;
+        box-sizing: border-box;
+    }
+    &:focus {
+        border-bottom: 1px solid #1488ed;
+    }
+}
+.answer{
+    padding: 0 0 6px 0;
+    margin-top: 8px;
+    border-bottom: 1px dashed #e2e6ed;
+    background: #fff;
+    font-size: 12px;
+    width: 100%;
+    color: #aeb5c0;
+    height: 34px;
+    box-sizing: border-box;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+}
+.isRepeat{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    .tip{
+        color:#1488ed
+    }
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(192 198 207 / 50%);
+}
+.footer-action{
+    font-size: 12px;
+    color: #a1a1a1;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .change-questions{
+        display: flex;
+        align-items: center;
+    }
+    .right-actions{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg{
+            width: 18px !important;
+            height: 18px !important;
+            cursor: pointer;
+        }
+        .clone{
+            cursor: pointer;
+            padding: 0 2px;
+            border: 1px solid #e2e6ed;
+            color: black;
+        }
+        .tip{
+            font-size: 12px;
+            color: #949aae;
+        }
+        .split{
+            height: 10px;
+            border-left: 1px solid rgb(192 198 207 / 50%);
+        }
+    }
+}
+input{
+    border-style: none;
+    outline: none;
+    width: 100%;
+}
+.normal{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 24px 0;
+    background-color: #fff;
+    border-radius: 2px;
+}

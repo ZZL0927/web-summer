@@ -1,0 +1,54 @@
+.content{
+    flex: 1 1;
+    overflow: auto;
+    div{
+        display: flex;
+        align-items: center;
+        background: #eeeff3;
+        flex: 1;
+        align-items: center;
+        border-radius: 3px;
+        display: flex;
+        margin-bottom: 5px;
+        padding: 15px 10px;
+        svg{
+            width: 20px !important;
+            height: 20px !important;
+            cursor: pointer;
+        }
+        span{
+            padding: 0 15px;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .done-content{
+            padding: 0 15px;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #919191;
+            text-decoration: line-through;
+        }
+        .done{
+            color: rgb(120,140,222);
+        }
+    }
+}
+.empty{
+    align-items: center;
+    color: hsla(0,0%,100%,.8);
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    svg{
+        height: 50px !important;
+        width: 50px !important;
+    }
+}
+.star-color{
+    color: rgb(120,140,222);
+}

@@ -1,0 +1,91 @@
+.input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 24px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 16px 0 rgb(192 198 207 / 50%);
+    
+}
+.title{
+    display: flex;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        // border-bottom: 1px solid rgba(25,55,88,.1);
+        border-bottom: 1px solid #1488ed;
+    }
+    input{
+        font-weight: bold;
+        flex: 1;
+        box-sizing: border-box;
+    }
+    &:focus {
+        border-bottom: 1px solid #1488ed;
+    }
+}
+.answer{
+    padding: 0 0 6px 0;
+    margin-top: 8px;
+    border-bottom: 1px dashed #e2e6ed;
+    background: #fff;
+    font-size: 12px;
+    width: 100%;
+    color: #aeb5c0;
+    box-sizing: border-box;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    .select-option{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        .option{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            input{
+                font-weight: bold;
+                color: black;
+                min-width: 400px;
+                border-style: none;
+                outline: none;
+                flex: 1;
+                border-bottom: 1px solid transparent;
+                &:hover{
+                    border-bottom: 1px solid rgb(192 198 207 / 50%);
+                }
+            }
+            svg{
+                margin-right: 10px;
+            }
+            .delete{
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .add-option{
+        cursor: pointer;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        color: #1488ed;
+        svg{
+            color: #1488ed;
+        }
+    }
+}
+input{
+    border-style: none;
+    outline: none;
+    width: 100%;
+}
+.normal{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 24px 0;
+    background-color: #fff;
+    border-radius: 2px;
+}

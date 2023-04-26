@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: rgb(224, 224, 224);
+    /* background-color: pink; */
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    width: 660px;
+    height: 860px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(63,178,163);
+}
+.head{
+    background-color: rgb(63,178,163);
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head p{
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+.head .name{
+    /* padding: 10px 0; */
+    font-size: 26px;
+}
+.head img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:20px;
+    right: 50px;
+}
+.main{
+    flex: 1;
+    background-color: white;
+    padding: 20px 40px;
+}
+.main li{
+    list-style: none;
+    display: flex;
+}
+.main li .down{
+    width: 30px;
+    border: 15px solid white;
+    border-top: 15px solid rgb(63,178,163);
+    background-color: pink;
+    position: absolute;
+    top: -2px;
+    left: -15px;
+}
+.main li>div:first-child{
+    top: -10px;
+    width: 150px;
+    border-right: 1px solid rgb(63,178,163);
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+}
+.main li>div:nth-child(2){
+    flex:1;
+    border-top: 2px solid rgb(63,178,163);
+    padding: 20px;
+    color: rgb(80, 80, 80);
+    position: relative;
+    font-size: 14px;
+}
+.main li>div:nth-child(2)>p.title{
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 550;
+}
+.main .first{
+    height: 100px;
+}
+.main .second{
+    height: 180px;
+}
+.main .third{
+    height: 300px
+}
+.main .last{
+    height: 80px;
+}

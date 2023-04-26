@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>添加 - 时间胶囊 - TimePill.net</title>
+  <link rel="stylesheet" href="../css/put.css">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="content">
+      <div class="left">
+        <a href="./index.html">
+          <img src="../img/logo.gif" alt="">
+          <span class="title">时间胶囊</span>
+        </a>
+        <a href="./index.html" class="jump">首页</a>
+        <a href="./put.html" class="jump active">添加</a>
+        <a href="./open.html" class="jump open">打开</a>
+      </div>
+      <a href="" class="diary">回胶囊日记</a>
+    </div>
+  </header>
+  <main>
+    <h1 class="main-header">添加胶囊</h1>
+    <div class="main">
+      <form method="post" class="input-area">
+        <span>你的名字</span>
+        <div class="required name-content"></div>
+        <input type="text" name="name" id="name">
+        <span>你的邮箱</span>
+        <div class="required email-content"></div>
+        <input type="text" name="email" id="email">
+        <span class="open-time">打开时间</span>
+        <div class="open-time">
+          <input type="text" name="time" class="time" id="time">
+          <span class="tips"> 打开时间之前，胶囊内容是看不到的。</span>
+        </div>
+        <div class="required time-content"></div>
+        <span>胶囊内容</span>
+        <div class="required required-content"></div>
+        <textarea name="content" cols="50" rows="8" class="capsule-content" id="capsule-content"></textarea>
+        <span class="tips">胶囊内容不能超过5000字。</span>
+        <span class="before-time-tips">未到期提示信息</span>
+        <div class="tip-length"></div>
+        <textarea name="tips" class="tips-content" id="tips-content"></textarea>
+        <span class="tips">在 打开时间 之前打开胶囊，会看到提示信息。</span>
+        <input type="submit" value="添加胶囊" class="submit">
+      </form>
+    </div>
+  </main>
+
+  <script src="../scripts/index.ts" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.new {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20rem;
+  padding: 20rem;
+  display: flex;
+}
+.new img {
+  display: inline-block;
+  width: 250rem;
+  height: 200rem;
+  object-fit: cover;
+  border-radius: 20rem;
+  margin-left: 10rem;
+  margin-right: 30rem;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right .news-title {
+  font-size: 26rem;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.right .news-author {
+  font-size: 20rem;
+  color: rgb(177, 177, 177);
+}

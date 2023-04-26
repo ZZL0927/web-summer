@@ -1,0 +1,84 @@
+@mixin box {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+}
+@mixin mask{
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.open-footer-box{
+    @include box;
+    flex-direction: column-reverse;
+    align-items: center;
+    visibility: visible;
+    .mask{
+        @include mask
+    }
+    .footer-content{
+        transform: translateY(0);
+    }
+}
+.close-footer-box{
+    @include box;
+    flex-direction: column-reverse;
+    align-items: center;
+    visibility: hidden;
+    .mask{
+        @include mask;
+        background-color: rgba(0,0,0,0);
+    }
+    .footer-content{
+        transform: translateY(100%);
+    }
+}
+.footer-content{
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    
+}
+.actions{
+    width: 100%;
+    border-bottom: 1px solid #ebedf0;
+    color: #969799;
+    padding: 15px 0;
+    text-align: center;
+}
+.action{
+    width: 100%;
+    color: #646566;
+    padding: 15px 0;
+    text-align: center;
+}
+.delete{
+    width: 100%;
+    color: #ee0a24;
+    padding: 15px 0;
+    text-align: center;
+}
+.cancle{
+    width: 100%;
+    margin-top: 8px;
+    color: #646566;
+    padding: 15px 0;
+    text-align: center;
+}

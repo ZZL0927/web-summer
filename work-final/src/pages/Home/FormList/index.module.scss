@@ -1,0 +1,94 @@
+.list{
+    font-size: 16px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    .left{
+        border-right: 1px solid #e7e9eb;
+        box-sizing: border-box;
+        padding: 20px 16px;
+        width: 230px;
+        background-color: white;
+        button{
+            width: 100%;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            svg{
+                margin-right: 10px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+        .form-list{
+            margin-top: 10px;
+            width: 100%;
+            height: 46px;
+            background: #f2f5fa;
+            margin-bottom: 4px;
+            padding: 0 12px;
+            height: 42px;
+            display: flex;
+            box-sizing: border-box;
+            color: #767c85;
+            font-size: 16px;
+            border-radius: 2px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    .right{
+        flex: 1;
+        padding: 40px 80px;
+        box-sizing: border-box;
+        background-color: white;
+        .star-action{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+}
+.star{
+    cursor: pointer;
+}
+:global{
+    .empty{
+        cursor: pointer;
+        visibility: hidden;
+    }
+    .table{
+        .ant-table{
+            font-size: 18px;
+        }
+        .ant-table-row{
+            cursor: pointer;
+            &:hover .empty{
+                visibility: visible;
+            }
+        }
+        .ant-table-row:hover .empty{
+            display: inline-block;
+        }
+        .ant-tag{
+            border: none;
+            padding: 0 10px;
+            border-radius: 10px;
+            min-width: 96px;
+            box-sizing: border-box;
+        }
+    } }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            border: none;
+        }
+    }
+    .delete{
+        color: red;
+    }

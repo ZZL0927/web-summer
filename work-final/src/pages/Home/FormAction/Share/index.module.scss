@@ -1,0 +1,28 @@
+.share{
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .header{
+        width: 100%;
+        font-size: 20px;
+    }
+    .qrcode{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 190px;
+        border: .01rem solid #e3e3e3;
+        padding-bottom: 20px;
+        .title{
+            text-align: center;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    }
+    .download{
+        color: #1890ff;
+        cursor: pointer;
+    }
+}

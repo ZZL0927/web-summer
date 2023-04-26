@@ -1,0 +1,122 @@
+.header-inner{
+    padding: 10px 100px;
+}
+/* 主体 */
+main{
+    background-color: rgb(246,246,246);
+    padding: 10px 100px;
+}
+/* 内容分类导航 */
+.tabs{
+    list-style-type:none;
+    height: 30px;
+}
+.tabs .active{
+    color: white;
+    background-color: rgb(49,195,123);
+}
+.tabs li{
+    float: left;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.tabs li:hover{
+    background-color: rgb(49,195,123);
+    color: white;
+}
+/* 展示区 */
+.list{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.list .card{
+    width: 18%;
+    padding: 10px 0px;
+}
+/* .card:not(:nth-child(5n)) {
+    margin-right: calc(10% / 4);
+} */
+.list .card .showImg{
+    width: 100%;
+    vertical-align: bottom;
+    transition: all 0.2s linear;
+}
+.list .card .imgBox{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.imgBox:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+}
+.imgBox:hover .deleteImg{
+    width: 30%;
+    height: 30%;
+    opacity: 1;
+}
+.imgBox:hover .showImg{
+    transform: scaleX(1.1) scaleY(1.1);
+    /* transform: scaleY(1.2); */
+}
+.imgBox .deleteImg{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.list .card p{
+    padding: 5px 0px;
+    color: rgba(30,30,30, 0.5)
+}
+.list .card .name{
+    cursor: pointer;
+    color: black;
+}
+.list .card .name:hover{
+    color: rgb(49,194,124);
+}
+/* 移动端适配 */
+@media (max-width: 768px){
+    main{
+        background-color: rgb(246,246,246);
+        padding: 10px 10px;
+    }
+    .list .card{
+        width: 48%;
+        padding: 10px 0px;
+    }
+    .card:not(:nth-child(2n)) {
+        margin-right: 4%;
+    }
+} 
+/* pc端适配 */
+@media (min-width: 768px){
+    main{
+        background-color: rgb(246,246,246);
+        padding: 10px 100px;
+    }
+    .list .card{
+        width: 18%;
+        padding: 10px 0px;
+    }
+    .card:not(:nth-child(5n)) {
+        margin-right: calc(10% / 4);
+    }
+} 
+

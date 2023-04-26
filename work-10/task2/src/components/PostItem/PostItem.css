@@ -1,0 +1,41 @@
+.card{
+    height: 400rem;
+    background-color: rgb(255,255,255);
+    border-radius: 20rem;
+    padding: 20rem;
+}
+.img-box{
+    overflow: hidden;
+    height: 270rem;
+    position: relative;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+}
+.img-box img{
+    width: 100%;
+}
+.img-box .top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100rem;
+}
+.post-title{
+    height: 100rem;
+    line-height: 100rem;
+    font-size: 30rem;
+    font-weight: bold;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.post-footer{
+    display: flex;
+    gap: 30rem;
+    align-items: center;
+    padding-left: 440rem;
+}
+.icon-comment:before{
+    vertical-align: middle;
+    margin-right: 10rem;
+}

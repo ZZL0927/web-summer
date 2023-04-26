@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: calc(100vw / 750);
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* 顶部 */
+header {
+  padding: 0 30rem;
+}
+.top {
+  width: 100%;
+  height: 50rem;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40rem;
+  font-weight: bold;
+  margin: 20rem 0;
+}
+.top img {
+  width: 8%;
+}
+.search {
+  height: 50rem;
+  display: flex;
+  width: 100%;
+  background-color: rgb(246, 247, 248);
+  border-radius: 25rem;
+  align-items: center;
+  overflow: hidden;
+}
+.search img {
+  margin-left: 15rem;
+  width: 36rem;
+}
+.search input {
+  background-color: rgb(246, 247, 248);
+  margin-left: 20rem;
+  border: none;
+  flex: 1;
+  outline: none;
+  height: 80%;
+  font-size: 26rem;
+}
+.part {
+  padding: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1rem solid rgb(228, 228, 228);
+}
+.part span {
+  width: 25%;
+  padding: 10rem 0;
+  color: rgb(173, 173, 173);
+  font-size: 22rem;
+  font-weight: bold;
+}
+.part span:first-child {
+  color: rgb(27, 135, 237);
+}
+/* 内容区 */
+main {
+  flex: 1;
+  overflow: auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 20rem 0;
+}
+.list-item .number {
+  text-align: center;
+  width: 10%;
+  font-weight: bold;
+  font-size: 40rem;
+  padding: 0 10rem;
+}
+.list-item img {
+  width: 20%;
+  margin: 0 10rem;
+}
+.list-item .text {
+  flex: 1;
+}
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 60rem;
+  margin-left: 10rem;
+  overflow: hidden;
+  justify-content: space-around;
+}
+.text .title {
+  font-size: 30rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.title .book-title {
+  flex: 1;
+  line-height: 38rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.people {
+  border-radius: 20rem;
+  justify-content: center;
+  width: 80rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(243, 243, 246);
+}
+.people img {
+  width: 20rem;
+  margin: 0;
+}
+.people .count {
+  color: rgb(113, 119, 129);
+  line-height: 20rem;
+  font-size: 20rem;
+  font-weight: normal;
+  transform: scale(0.7);
+}
+.text .author {
+  font-size: 26rem;
+  color: rgb(113, 119, 129);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 360rem;
+}
+.text .recommend {
+  font-weight: bold;
+  color: rgb(152, 158, 169);
+  font-size: 26rem;
+  display: flex;
+  align-items: center;
+}
+.text .recommend img {
+  width: 140rem;
+  height: 50rem;
+  margin: 0;
+}

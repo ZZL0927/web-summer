@@ -1,0 +1,58 @@
+.form{
+    padding: 48px 142px;
+    .title{
+        text-align: center;
+        font-weight: bold;
+    }
+    .body{
+        width: 100%;
+        .item{
+            margin-bottom: 50px;
+        }
+        .top{
+            color: black;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .text{
+            border-style: none;
+            outline: none;
+            width: 100%;
+            &:hover{
+                border-bottom: 1px solid rgb(20,136,237);
+            }
+        }
+        .time{
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom: 1px solid rgb(20,136,237);
+            }
+        }
+        .date{
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom: 1px solid rgb(20,136,237);
+            }
+        }
+        .multi{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .pull{
+            width: 100%;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    }
+    .submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            background-color: rgb(161,207,248);
+            border-color: rgb(161,207,248);
+        }
+    }
+}

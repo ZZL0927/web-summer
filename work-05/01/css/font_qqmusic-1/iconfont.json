@@ -1,0 +1,23 @@
+{
+  "id": "3513258",
+  "name": "qq音乐",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7588028",
+      "name": "24gl-videoCamera",
+      "font_class": "24gl-videoCamera",
+      "unicode": "e9f0",
+      "unicode_decimal": 59888
+    },
+    {
+      "icon_id": "7594048",
+      "name": "24gl-play",
+      "font_class": "24gl-play",
+      "unicode": "ea6d",
+      "unicode_decimal": 60013
+    }
+  ]
+}

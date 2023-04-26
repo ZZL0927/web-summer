@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 26px;
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  min-width: 1050px;
+  background-color: rgb(9, 7, 35);
+  padding-top: 50px;
+}
+.content {
+  margin: 0 auto;
+  width: 1050px;
+  height: 560px;
+  background-color: rgb(16, 51, 150);
+  border-radius: 10px;
+  padding: 30px 14px;
+}
+.tabs {
+  height: 170px;
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.imgbox .active {
+  display: none;
+}
+.tabs .normal {
+  display: inline-block;
+}
+.tabs > .active .imgbox {
+  background-color: white;
+}
+.tabs > .active .normal {
+  display: none;
+}
+.tabs > .active .active {
+  display: inline-block;
+}
+.tab {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+.tab .active {
+  background-color: rgb(255, 255, 255);
+}
+.imgbox {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: rgb(64, 87, 167);
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.imgbox:hover {
+  background-color: white;
+}
+.imgbox:hover .normal {
+  display: none;
+}
+.imgbox:hover .active {
+  display: inline-block;
+}
+.imgbox img {
+  color: black;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 330px;
+  height: 340px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-top: 30px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.author {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author-name {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.author-img {
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.author-img img {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+.icons {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 32px;
+  column-gap: 28px;
+  grid-auto-rows: 40px;
+  padding: 20px auto;
+  margin-top: 30px;
+  justify-items: center;
+  transition: 0s;
+}
+.card .six {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 60px;
+}
